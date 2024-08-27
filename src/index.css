@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-950 text-neutral-300;
+}
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+}
