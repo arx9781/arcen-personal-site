@@ -31,7 +31,11 @@ function App() {
               arcen
             </h1>
             <p className="text-xs font-medium text-secondary-light dark:text-secondary-dark md:text-xl">
-              IPA /ˈɑrsn̩ / — name intials & eng student
+              IPA /ˈɑrsn̩ / — pronounced{" "}
+              <mark className="bg-secondary-dark/40 text-secondary-dark dark:bg-secondary-light/40 dark:text-secondary-light px-1.5 rounded-full font-mono font-bold">
+                {" "}
+                r-sen{" "}
+              </mark>
             </p>
           </div>
           <div className="flex w-[20%] items-center justify-end">
@@ -45,6 +49,38 @@ function App() {
             </button>
           </div>
         </div>
+        <p className="text-justify text-base p-4 dark:text-primary-dark text-primary-light">
+          hi, i'm <span className="text-gradient">aditya</span> aka{" "}
+          <span className="text-gradient">arcen</span>, a software engineering
+          student; primarily working on the frontend with a heavy focus on{" "}
+          <span className="text-gradient">reactjs</span>,{" "}
+          <span className="text-gradient">nextjs</span>,{" "}
+          <span className="text-gradient">tailwindcss</span>, and{" "}
+          <span className="text-gradient">typescript</span>. my design language
+          being <span className="text-gradient">minimalism</span> and{" "}
+          <span className="text-gradient">neo-brutalism</span>, as you can see
+          in this website.
+          <br />
+          <br />
+          fascinated by the <span className="text-gradient">
+            internet
+          </span> and <span className="text-gradient">computers</span>, i've
+          always wanted to make those programs myself and — that's why i'm{" "}
+          <span className="text-gradient">here</span>.
+          <br />
+          <br />
+          outside of programming, i maintain a relatively{" "}
+          <span className="text-gradient">low profile</span>. playing games like{" "}
+          <span className="text-gradient">valorant</span> and{" "}
+          <span className="text-gradient">mobile legends</span>, and also
+          watching <span className="text-gradient">anime</span> sometimes. if
+          you're interested, hit me up on my{" "}
+          <span className="text-gradient">
+            socials for playing games and working on a project
+          </span>
+          .
+          <hr className="w-full mx-auto border-0 h-[1px] bg-secondary-light dark:bg-secondary-dark my-12" />
+        </p>
       </div>
     </div>
   );

@@ -18,3 +18,38 @@
   font-family: "Satoshi-VariableItalic";
   src: url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
 }
+
+.icon-rotate {
+  animation: icon-rotate 10s linear infinite;
+}
+
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #0a0a0b, #d6d6d6);
+  background-clip: text;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text 10s linear infinite;
+  font-weight: 600;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
