@@ -1,7 +1,6 @@
 import ThemeToggle from "./components/ThemeToggle";
 import Heading from "./components/Heading";
 import Anchor from "./components/Anchor";
-import AnchorMainText from "./components/AnchorMainText";
 
 function App() {
   return (
@@ -11,8 +10,8 @@ function App() {
           <div className="flex w-[80%] flex-col items-start justify-between">
             <Heading heading="arcen" />
             <p className="text-xs font-medium text-secondary-light dark:text-secondary-dark md:text-xl">
-              IPA /<code className="font-semibold">ˈɑrsn̩</code> / — pronounced{" "}
-              <mark className="bg-secondary-dark/40 text-secondary-dark dark:bg-secondary-light/40 dark:text-secondary-light px-1.5 rounded-full font-mono font-bold">
+              IPA /ˈɑrsn̩ / — pronounced{" "}
+              <mark className="rounded-full bg-secondary-dark/40 px-1.5 font-mono font-bold text-secondary-dark dark:bg-secondary-light/40 dark:text-secondary-light">
                 {" "}
                 r-sen{" "}
               </mark>
@@ -22,7 +21,7 @@ function App() {
             <ThemeToggle />
           </div>
         </div>
-        <p className="text-justify text-base p-4 dark:text-primary-dark text-primary-light">
+        <p className="p-4 text-justify text-base text-primary-light dark:text-primary-dark">
           hi, i'm <span className="text-gradient">aditya</span> aka{" "}
           <span className="text-gradient">arcen</span>, a software engineering
           student; primarily working on the frontend with a heavy focus on{" "}
@@ -52,22 +51,33 @@ function App() {
             socials for playing games and working on a project
           </span>
           .
-          {/* <hr className="w-full mx-auto border-0 h-[1px] bg-secondary-light dark:bg-secondary-dark mt-4" /> */}
         </p>
         <div className="p-4">
-          <Heading heading="manifesto" />
+          <Heading heading="projects" />
           <div className="mt-4">
-            <div className="flex items-center justify-between flex-row my-4">
-              <AnchorMainText text="Image filter made w/ reactjs" />
-              <Anchor link="https://github.com/arx9781/arxe.gallery" />
+            <div className="my-4 flex flex-row items-center justify-between">
+              <Anchor
+                link="https://github.com/arx9781/arxe.gallery"
+                text="Image filter made w/ reactjs"
+              />
             </div>
-            <div className="flex items-center justify-between flex-row my-4">
-              <AnchorMainText text="VSCode Theme" />
-              <Anchor link="https://github.com/arx9781/Mono-cl" />
+            <div className="my-4 flex flex-row items-center justify-between">
+              <Anchor
+                link="https://github.com/arx9781/Mono-cl"
+                text="Mono-cl VSCode Theme"
+              />
             </div>
-            <div className="flex items-center justify-between flex-row my-4">
-              <AnchorMainText text="Minimalist password generator" />
-              <Anchor link="https://github.com/arx9781/password_gen" />
+            <div className="my-4 flex flex-row items-center justify-between">
+              <Anchor
+                link="https://github.com/arx9781/password_gen"
+                text="Minimal Password Generator"
+              />
+            </div>
+            <div className="my-4 flex flex-row items-center justify-between">
+              <Anchor
+                link="https://github.com/arx9781/arcen-personal-site"
+                text="arcen.site"
+              />
             </div>
           </div>
         </div>
