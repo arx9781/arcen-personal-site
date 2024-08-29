@@ -1,6 +1,15 @@
 import ThemeToggle from "./components/ThemeToggle";
 import Heading from "./components/Heading";
 import Anchor from "./components/Anchor";
+import SocialButtons from "./components/SocialButtons";
+import {
+  FaDiscord,
+  FaGithub,
+  FaInstagram,
+  FaSpotify,
+  FaThreads,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 function App() {
   return (
@@ -52,34 +61,81 @@ function App() {
           </span>
           .
         </p>
-        <div className="p-4">
-          <Heading heading="projects" />
-          <div className="mt-4">
-            <div className="my-4 flex flex-row items-center justify-between">
-              <Anchor
-                link="https://github.com/arx9781/arxe.gallery"
-                text="Image filter made w/ reactjs"
-              />
-            </div>
-            <div className="my-4 flex flex-row items-center justify-between">
-              <Anchor
-                link="https://github.com/arx9781/Mono-cl"
-                text="Mono-cl VSCode Theme"
-              />
-            </div>
-            <div className="my-4 flex flex-row items-center justify-between">
-              <Anchor
-                link="https://github.com/arx9781/password_gen"
-                text="Minimal Password Generator"
-              />
-            </div>
-            <div className="my-4 flex flex-row items-center justify-between">
-              <Anchor
-                link="https://github.com/arx9781/arcen-personal-site"
-                text="arcen.site"
-              />
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="p-4">
+            <Heading heading="projects" />
+            <div className="mt-4">
+              <div className="my-4 flex flex-row items-center justify-between">
+                <Anchor
+                  link="https://github.com/arx9781/arxe.gallery"
+                  text="Image filter made w/ reactjs"
+                />
+              </div>
+              <div className="my-4 flex flex-row items-center justify-between">
+                <Anchor
+                  link="https://github.com/arx9781/Mono-cl"
+                  text="Mono-cl VSCode Theme"
+                />
+              </div>
+              <div className="my-4 flex flex-row items-center justify-between">
+                <Anchor
+                  link="https://github.com/arx9781/password_gen"
+                  text="Minimal Password Generator"
+                />
+              </div>
+              <div className="my-4 flex flex-row items-center justify-between">
+                <Anchor
+                  link="https://github.com/arx9781/arcen-personal-site"
+                  text="arcen.site"
+                />
+              </div>
             </div>
           </div>
+          <div className="p-4">
+            <div className="px-0 md:px-2">
+              <Heading heading="links" />
+            </div>
+            <SocialButtons
+              link="https://github.com/arx9781"
+              app="Github"
+              id="arx9781"
+              icon={<FaGithub />}
+            />
+            <SocialButtons
+              link="https://www.threads.net/@arx9781"
+              app="Threads"
+              id="arx9781"
+              icon={<FaThreads />}
+            />
+            <SocialButtons
+              link="https://instagram.com/arx9781"
+              app="Instagram"
+              id="arx9781"
+              icon={<FaInstagram />}
+            />
+            <SocialButtons
+              link="https://open.spotify.com/user/e9z0rzwxyw9dwv7sngwscw26q?si=e8f4ec727152412d"
+              app="Spotify"
+              id="adi"
+              icon={<FaSpotify />}
+            />
+            <SocialButtons
+              link="https://x.com/morphinearc?t=mt7mr3w5p4WPg6lOi_eNIA&s=09"
+              app="X"
+              id="morphinearc"
+              icon={<FaXTwitter />}
+            />
+            <SocialButtons
+              link="https://discordapp.com/users/502370675386875907"
+              app="Discord"
+              id="arx9781"
+              icon={<FaDiscord />}
+            />
+          </div>
+        </div>
+        <div className="mt-10 p-4 pb-8 text-left font-medium text-primary-light dark:text-primary-dark md:mt-20">
+          <span className="text-gradient">MIT</span> 2024 - present ©{" "}
+          <span className="text-gradient">arcen</span>
         </div>
       </div>
     </div>
