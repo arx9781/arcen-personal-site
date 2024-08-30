@@ -11,7 +11,7 @@ import {
 
 const Links = () => {
   return (
-    <div className="px-4 md:p-4">
+    <div className="text-fade-anim px-4 md:p-4">
       <div className="px-0 md:px-2">
         <Heading heading="links" />
       </div>

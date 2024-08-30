@@ -26,6 +26,8 @@ const ThemeToggle = () => {
     <button
       onClick={handleThemeChange}
       className="transition-transform duration-500 ease-in-out hover:-rotate-180"
+      aria-label="theme-toggle"
+      title="theme-toggle"
     >
       <div className="transition-transform duration-500 ease-in-out">
         {theme === "dark" ? <SunIcon /> : <MoonIcon />}

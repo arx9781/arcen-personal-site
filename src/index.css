@@ -9,10 +9,6 @@
   font-family: "Satoshi-Variable";
 }
 
-/* ::selection {
-  @apply bg-translucent-accent-light/50;
-} */
-
 @media (prefers-color-scheme: dark) {
   ::selection {
     @apply bg-translucent-accent-dark/50;
@@ -22,6 +18,7 @@
 @font-face {
   font-family: "Satoshi-Variable";
   src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-display: swap;
 }
 
 .icon-rotate {
@@ -56,5 +53,22 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .text-fade-anim {
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 35%;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

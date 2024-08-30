@@ -1,6 +1,6 @@
 const Content = () => {
   return (
-    <p className="p-4 text-justify text-base text-primary-light dark:text-primary-dark">
+    <p className="text-fade-anim p-4 text-justify text-base text-primary-light dark:text-primary-dark">
       hi, i'm <span className="text-gradient">aditya</span> aka{" "}
       <span className="text-gradient">arcen</span>, a software engineering
       student; primarily working on the frontend with a heavy focus on{" "}
